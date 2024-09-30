@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LORM SPACE</title>
+    <style>
+        
+        * {
+            box-sizing: border-box; /
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; 
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+   
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-img img {
+        width: 80vw; 
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .profile-container {
+        width: 95%; 
+    }
+
+    .articles-grid {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .carde {
+        width: 90%; 
+        max-height: auto; 
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+        header {
+    background: linear-gradient(to right, #2c4b70, #091a2f);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #122e50;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    z-index: 1;
+    border-radius: 7px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+
+  *{
+      
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+  }
+   
+    section{
+        min-height: 100vh;
+        padding: 5rem 9% 5rem;
+        
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        background: linear-gradient(135deg, #010312, #022645);
+        max-width: 100vw; 
+        overflow: hidden;
+    }
+    .home .home-content h1{
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+    span{
+        color: #ffffff;
+    }
+    .home-content h3{
+        margin-top: 10px;
+        font-size: 2.5rem;
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+    .home-img{
+        border-radius: 50%;
+       
+    }
+    .home-img img{
+        position: relative;
+        width: 40vw;
+        border-radius:20px;
+        box-shadow: 0 0 30px ;
+        cursor: pointer;
+        transition: 0.2 linear;
+    }
+    .home-img img:hover{
+        font-size: 1.8rem;
+        font-weight: 500;
+       
+    }
+    .social-icons a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        background-color: transparent ;
+        font-size: 2rem;
+        border-radius: 100px;
+        margin: rem 1.5rem 3rem 0;
+        transition: 0.3s ease;
+        color: #ffffff;
+        
+    }
+    .social-icons a:hover{
+        color: #010312;
+        transform: scale(1.3) translateY(-5px);
+        box-shadow: 0 0 25px #00327c;
+    }
+    .btn{
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        background-color: #010312;
+        border-radius: 4rem;
+        font-size: 1.3rem;
+        color: #8fa3b0;
+        letter-spacing: 0.3rem;
+        font-weight: 600;
+        border: 2px solid #5a798e96;
+        margin-top: 1rem;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .btn:hover{
+        transform: scale3d(1.03);
+        background-color: #254063;
+        color: #02051d;
+        box-shadow: 0 0 25px #00327c;
+    }
+    .typing-text{
+        font-size: 34px;
+        font-weight: 600;
+        min-width: 280px;
+
+    }
+    .typing-text span{
+        position: relative;
+    }
+    .typing-text span::before{
+        content: "spaca";
+        color: #516a9c;
+        animation: words 20s infinite;
+    }
+    .typing-text span::after{
+        content: "";
+        position: absolute;
+        width: calc(10% + 8px);
+        height: 50px;
+        border-left: 3px solid #010312;
+        right: -8;
+        animation: cursor 0.6s infinite;
+        color: #1c8dce;
+
+    }
+    @keyframes cursor {
+        to{
+            border-left:  3px solid #ffffff;
+        }
+    }
+    @keyframes words{
+        0%,10%{
+            content: "";
+        }
+        11% , 50%{
+            content: "LORM SPACE";
+        }
+        51% ,85%{
+            content: "SAUDI LORM";
+        }
+        86%, 100%{
+            content: "LORM";
+        }
+
+    }
+
+
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container-body{
+            color: #fff;
+        }
+        .container-body-img{
+            width: 99vw;
+            height: 100vh;
+            max-width: 100vw; 
+            overflow: hidden; 
+        }
+        .container {
+            display: flex;
+            flex-direction:column; 
+            align-items: center; 
+            padding: 20px;
+            max-width: 100vw; 
+            overflow: hidden; 
+        }
+        .profile-container {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 6px 30px rgba(21, 100, 164, 0.7);
+            margin: 10px 0 ; 
+            width: 80%; /* عرض المربعات */
+            max-width: 600px; 
+            transition: transform 0.3s;
+            margin-bottom: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 50px;
+        }
+        .profile-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 50px rgba(0, 0, 0, 0.9); 
+        }
+        .profile-image {
+            width: 100%; 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .profile-text {
+            padding: 15px;
+        }
+
+
+
+
+        .articles-section {
+            background-color: rgb(9, 19, 40);
+            padding: 40px;
+            margin-top: 70px;
+            border-radius: 30px;
+            margin-bottom: 40px;
+            align-items: center; 
+        }
+
+        .articles-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .carde {
+            background: linear-gradient(to right, #1b1b30, #0f4c75); 
+            border-radius: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            padding: 0px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
+            width: 300px;
+            max-height: 350px;
+            overflow: hidden; 
+            flex: 1 1 300px; 
+        }
+
+        .carde:hover {
+            transform: translateY(-10px);
+        }
+
+        .carde h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .carde p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ffffff;
+        }
+
+        .carde a {
+            background-color: #132136;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+           
+        }
+
+        .carde a:hover {
+            background-color: #578ea1;
+            
+        }
+
+        .carde img {
+          width: 100%; 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .carde.expanded {
+            max-height: 1500px; 
+        }
+
+        .additional-info {
+            display: none;
+        }
+       
+
+        .container1 {
+    width: 90%;
+   
+    max-width: 1200px;
+    background: linear-gradient(to right, #383861, #01192a); 
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 20px rgb(70, 66, 66);
+    margin: 100px auto;
+    padding:   0; 
+   
+}
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto; 
+}
+
+
+@media (max-width: 600px) {
+    .image-section img {
+        width: 120%;
+        height: auto;
+    }
+}
+.content-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro {
+    margin-bottom: 20px;
+}
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+.article {
+    background: #3b3b5474;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+.article:hover {
+    transform: scale(1.05);
+}
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: px;
+}
+.article p {
+    font-size: 1rem;
+}
+
+
+.slider{
+    height: 100vh;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    position: relative;
+    border: 10px solid black;
+}
+.slider .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+   
+}
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .list .item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, #000000 40%, transparent
+    );
+}
+
+/* هنا حل المشككككله\*/
+.slider .list .item .content{
+    position: absolute;
+    left: 5%;
+    top: 11%;
+    width: 500px;
+    max-width: 90%;
+    z-index: 1;
+}
+.slider .list .item .content p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.slider .list .item .content h2{
+    font-size: 25px;
+    margin: 0;
+   
+}
+
+
+.slider .list .item.active{
+    opacity: 1;
+    z-index: 10;
+}
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.slider .list .item.active h2{
+    animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
+.arrows{
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+.arrows button{
+    background-color: rgba(238, 238, 238, 0.437);
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: black;
+}
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: center;
+}
+.thumbnail::-webkit-scrollbar{
+    width: 0;
+}
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .item.active{
+    filter: brightness(1.5);
+}
+.thumbnail .item .content{
+    position: absolute;
+    inset: auto 10px 10px 10px;
+}
+@media screen and (max-width: 678px) {
+    .thumbnail{
+        justify-content: start;
+    }
+    .slider .list .item .content h2{
+        font-size: 60px;
+    }
+    .arrows{
+        top: 10%;
+    }
+}
+
+
+
+
+      
+.containerimg{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+.containerimg .heading{
+    margin-bottom: srem;
+}
+.containerimg-box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #6b6b6b;
+
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 3rem;
+    padding: 20px; 
+}
+
+.containerimg-item {
+    min-height: 300px; 
+    max-width: 100%; 
+    background: #030013;
+    border-radius: 2rem;
+    margin: 0 auto; 
+    padding: 30px 20px; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.containerimg-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(200, 196, 196, 0.5);
+}
+
+.containerimg-item h2{
+    font-size: 2.8rem;
+}
+
+.containerimg-item p{
+    font-size: 1.3rem;
+}
+.content {
+   
+    padding: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.home-two {
+    padding: 100px 20px; 
+    position: relative;
+    width: 80%;
+    max-width: 1200px; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #233d5d, #091a2f);
+    margin: 100px auto;
+    border-radius: 30px;
+}
+
+
+
+
+.home-two .contenttwo {
+    z-index: 888;
+    color: #0f8d8f;
+    width: 100%; 
+    max-width: 600px;
+    margin-top: 50px;
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    background: #00000000;
+}
+
+
+.home-two::before {
+    z-index: 777;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home-two .contenttwo.active {
+    display: block;
+}
+
+.home-two .contenttwo h1 {
+    font-size: 3.0em; 
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    font-weight: 900;
+    line-height: 1.2; 
+    margin-bottom: 30px;
+}
+
+.home-two .contenttwo h1 span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home-two .contenttwo p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 600px) {
+    .home-two .contenttwo p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .home-two .contenttwo h1 {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 1040px) {
+    .home-two {
+        padding: 100px 20px; 
+    }
+}
+
+.home-two img {
+    z-index: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.slider-navigation {
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover {
+    transform: scale(1.2);
+}
+
+.slider-navigation .nav-btn.active {
+    background: #000001;
+}
+
+.video-slide {
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+
+
+
+    footer {
+      background: linear-gradient(to right, #233d5d, #091a2f);
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-top: 3px solid #ffffff;
+    }
+
+    footer p {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 5px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    footer a:hover {
+      transform: scale(1.1);
+      color: #fbfbfb;
+    }
+
+    .icon {
+      width: 40px;
+      transition: color 0.3s ease;
+    }
+    </style>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var menuToggle = document.querySelector('.menu-toggle');
+      var menu = document.querySelector('.menu');
+
+      menuToggle.addEventListener('click', function() {
+        menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+      });
+
+      const profileContainers = document.querySelectorAll('.profile-container');
+
+      window.addEventListener('scroll', function() {
+        profileContainers.forEach(container => {
+          const rect = container.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            container.classList.add('visible');
+          }
+        });
+      });
+    });
+  </script>
+<body>
+    <header>
+        <div class="logo">LORM SPACE</div>
+        <div>SAUDI <EM>LORM</EM></div>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About the Kingdom</a></li>
+          <li><a href="#">Heritage and Culture</a></li>
+          <li><a href="#">Tourism</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <section class="home">
+        <div class="home-img">
+            <img src="img\Black Green Modern Outer Space Presentation.png" alt="Space">
+        </div>
+        <div class="home-content">
+            <h1><span>LORM SPACS</span></h1>
+            <h3 class="typing-text">Welcome to <span></span> </h3>
+            <p></p>
+            <div class="social-icons">
+                <a href="https://t.co/M0ad1kuBm8"class="fa-brands fa-linkedin"><img class="icon" src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Abdulrahman-A9" class="fa-brands fa-github"><img class="icon" src="github.png" alt="GitHub"></a>
+                <a href="https://t.co/ovHXe1dJTz" class="fa-brands fa-X"><img class="icon" src="twitter.png" alt="Twitter"></a>
+            </div>
+            <a href="" class="btn">PARTICIPATE</a>
+
+        </div>
+     </section>
+
+    
+<div class="class">
+     <div class="container1">
+
+        <div class="content-section">
+            <div class="intro">
+                <h1>Welcome to LORM SPACS</h1>
+                <h2>The site talks about space and we talk about departments:</h2>
+            </div>
+            <div class="articles">
+                <div class="article">
+                    <h2>Satellites</h2>
+                </div>
+                <div class="article">
+                    <h2>Space flights</h2>
+                </div>
+                <div class="article">
+                    <h2>space technology</h2>
+                   
+                </div>
+            </div>
+        </div>
+    </div>  </div>
+ <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="img\nasa2.jpg">
+                <div class="content">
+                    <p>Space flights</p>
+                    <h2> Apollo 11</h2>
+                    <p> Year: 1969<br><br>
+                        Operator: NASA<br><br>
+                        The first crewed mission to land on the Moon. Astronauts Neil Armstrong and Buzz Aldrin became the first and second humans to walk on the
+                             lunar surface on July 20, 1969.</p>
+                   
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\nasa3.jpg">
+                <div class="content">
+                   
+                    <p>Space flights</p>
+                    <h2>Space Shuttle</h2>
+                    <p>
+                        Years: 1981-2011<br><br>
+                        Operator: NASA<br><br>
+                        A program that enabled reusable spacecraft to transport astronauts and cargo to and from space.
+                         It played a critical role in constructing the International Space Station (ISS)
+                          and deploying the Hubble Space Telescope.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\nasa4.jpg">
+                <div class="content">
+                    <p>Space flights</p>
+                    <h2> Cassini Huygens</h2>
+                    <p>
+                        Years: 1997-2017<br><br>
+                        Operators: NASA and ESA (European Space Agency)<br><br>
+                        A mission to study Saturn and its moons. Cassini orbited Saturn and collected invaluable data about its atmosphere, rings, and moons. The Huygens probe landed on Titan, Saturn's largest moon.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\nasa5.jpg">
+                <div class="content">
+                    <p>Space flights</p>
+                    <h2> Voyager 1 and 2</h2>
+                    <p>
+                        Year: 1977<br><br>
+                        Operator: NASA<br><br>
+                         Twin spacecraft designed for long-term exploration of the outer planets.
+                         Voyager 1 provided detailed images of Jupiter and Saturn, while Voyager 2 explored Uranus and Neptune.
+                         
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\adam-miller-dBaz0xhCkPY-unsplash.jpg">
+                <div class="content">
+                    <p>Space flights</p>
+                    <h2>Juno</h2>
+                    <p>
+                        Year: 2011<br><br>
+                        Operator: NASA<br><br>
+                        Details: A mission to study Jupiter's atmosphere, magnetic field, 
+                        and gravitational field. Juno aims to understand
+                         the planet's formation and structure, providing insights
+                          into the gas giant's role in the solar system.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="img\nasa2.jpg">
+                <div class="content">
+                  
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\nasa3.jpg">
+                <div class="content">
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\nasa4.jpg">
+                <div class="content">
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\nasa5.jpg">
+                <div class="content">
+                   
+                </div>
+            </div>
+            <div class="item">
+                <img src="img\adam-miller-dBaz0xhCkPY-unsplash.jpg">
+                <div class="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <div class="container">
+        <div class="profile-container">
+            <img src="img\img 2\np_file_235126.jpeg" alt="Space Image 1" class="profile-image">
+            <div class="profile-text">
+               <h2> Hubble Space Telescope</h2>
+                <h4>Launch Date: April 24, 1990</h4>
+               <h4> Purpose: Astronomy</h4>
+               <h4> The Hubble Space Telescope has provided some of the most detailed images of distant galaxies, nebulae, and other astronomical phenomena. It operates in the ultraviolet, visible, and near-infrared spectra.</h4></div>
+        </div>
+
+        
+        <div class="profile-container">
+            <img src="img\img 2\9802669_orig-H-2021.webp" alt="Space Image 2" class="profile-image">
+            <div class="profile-text">
+                <h2>International Space Station (ISS)</h2>
+                <h4>Launch Date: November 20, 1998 (first module)</h4
+                <h4>Purpose: Space research</h4>
+                <h4>The ISS serves as a microgravity and space environment research laboratory where scientific research is conducted in astrobiology, astronomy, meteorology, and physics.</h4>  </div>
+        </div>
+
+    
+        <div class="profile-container">
+            <img src="img\img 2\GPS-III-Satellite-on-orbit.jpg" alt="Space Image 3" class="profile-image">
+            <div class="profile-text">
+                <h2>GPS (Global Positioning System) Satellites</h2>
+                <h4>Launch Date: August 27, 2002 (first satellite)</h4>
+                <h4>Purpose: Space exploration</h4>
+                <h4>The ISS serves as a microgravity and space environment research laboratory where scientific research is conducted in astrobiology, astronomy, meteorology, and physics.</h4>
+               </div>
+        </div>
+
+        <div class="profile-container">
+            <img src="img\img 2\NorthropGrummansScalableSIRUExpandsSupportofNext-GenerationWeatherSatellites_03c1247e-b2ca-45ba-abdf-80f5995486f1-prv.jpg" alt="Space Image 4" class="profile-image">
+            <div class="profile-text">
+                <h2>GOES (Geostationary Operational Environmental Satellites)</h2>
+                <h4>Launch Date: First satellite launched in 1975</h4>
+                <h4>Purpose: Weather monitoring</h4>
+                <h4>GOES satellites provide real-time data on weather conditions, including storm tracking and severe weather alerts, essential for meteorological forecasting.</h4>
+           </div>
+        </div>
+
+        <!-- مربع 5 -->
+        <div class="profile-container">
+            <img src="img\img 2\L9-Stills-Cover-5.png" alt="Space Image 5" class="profile-image">
+            <div class="profile-text">
+                <h2>Landsat Satellites</h2>
+                <h4>Launch Date: First satellite launched in 1972</h4>
+                <h4> Purpose: Earth observation</h4>
+                <h4>The Landsat program has been crucial for land use planning, agriculture monitoring, and environmental management, providing detailed imagery of Earth's surface.</h4>
+                </div>
+        </div>
+  
+    </div>
+
+
+    <div class="home-two">
+        <img class="video-slide active" src="vid\nasa-Q1p7bh3SHj8-unsplash.jpg" autoplay muted loop></img>
+        <img class="video-slide " src="vid\nasa-hubble-space-telescope-NOBlqe6byHc-unsplash.jpg" autoplay muted loop></img>
+        <img class="video-slide" src="vid\nasa-yZygONrUBe8-unsplash.jpg" autoplay muted loop></img>
+        <img class="video-slide" src="vid\anirudh-PSDEqr7lE7k-unsplash.jpg" autoplay muted loop></img>
+        <img class="video-slide" src="vid\david-monje-maI382AB0-M-unsplash.jpg" autoplay muted loop></img>
+        <div class="contenttwo active">
+            <span>SPACE TECHNOLOGY</span>  <br> <h1>Propulsion Systems</h1>
+            <p>
+                <span>Rocket Engines</span>  <br>
+                Liquid Fuel: Used in engines like the RS-25, known for high efficiency.
+                Solid Fuel: Such as Solid Rocket Boosters, recognized for simplicity and reliability.<br><br>
+                Electric Propulsion<br>
+                Ion Thrusters: Utilized in long-duration missions, like the Dawn spacecraft.</p>
+        </div>
+        <div class="contenttwo">
+            <span>SPACE TECHNOLOGY</span>  <br> <h1>Satellites</h1>
+            <p>
+                <span>Types of Satellites</span>  <br>
+                Communication Satellites: Like Intelsat, providing global communication services.<br><br>
+                Remote Sensing Satellites: Such as Landsat, used for Earth monitoring and climate change studies.<br><br>
+                CubeSats<br>
+                Small, cost-effective designs used for educational research and experiments.</p>
+        </div>
+        <div class="contenttwo">
+            <span>SPACE TECHNOLOGY</span>  <br> <h1>Robotic Vehicles</h1>
+            <p>
+                Rovers<br>
+                Curiosity and Perseverance: Exploring the Martian surface, collecting and analyzing data.<br><br>
+                Space Robots<br>
+                Robots on the International Space Station (ISS): Used for maintenance tasks and conducting experiments..</p>
+        </div>
+        <div class="contenttwo">
+            <span>SPACE TECHNOLOGY</span>  <br> <h1>Comunication Systems</h1>
+            <p>
+                Communication Technology <br>
+                High-Frequency Communication Systems: Used for transmitting data from space to Earth. <br> <br>
+                Laser Communication <br>
+                Provides much higher data transfer speeds compared to traditional technologies.</p>
+        </div>
+        <div class="contenttwo">
+            <span>SPACE TECHNOLOGY</span>  <br> <h1>Life Support Systems</h1>
+            <p>
+                Environmental Control Systems<br>
+                Includes air purification and water recycling on the ISS.<br><br>
+                Space Suits<br>
+                EMU Suit: Protects astronauts from harsh space conditions and contains life support systems.</p>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn "></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </div>
+
+    <div class="containerimg">
+        <div class="containerimg-box">
+           
+            <div class="wrapper">
+                <div class="containerimg-item">
+                     <img src="img\تنزيل (1).jpg">
+                     <h2>Yuri Gagarin</h2>
+                     <div class="riting">
+
+                     </div>
+                     <p>The first human to travel into space, launched on April 12, 1961, aboard "Vostok 1." He became a global icon of space exploration.</p>
+                    </p>
+                </div>
+
+                <div class="containerimg-item">
+                    <img src="img\Neil_Armstrong_pose.jpg">
+                    <h2>lNeil Armstrong</h2>
+                    <div class="riting">
+
+                    </div>
+                    <p>
+                    The commander of Apollo 11 and the first human to walk on the moon on July 20, 1969. His famous quote was, "That's one small step for man, one giant leap for mankind." </p>
+               </div>
+
+               <div class="containerimg-item">
+                <img src="img\1200px-Sally_Ride_(1984).jpg">
+                <h2>Sally Ride</h2>
+                <div class="riting">
+
+                </div>
+                <p>
+                    The first American woman to travel into space, flying on June 18, 1983, aboard the Space Shuttle Challenger. She is considered a symbol for women in the field of space exploration.
+                    </p>
+           </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.carde');
+      cards.forEach(card => {
+          card.addEventListener('click', function() {
+              card.classList.toggle('expanded');
+              const additionalInfo = card.querySelector('.additional-info');
+              additionalInfo.style.display = additionalInfo.style.display === 'block' ? 'none' : 'block';
+          });
+      });
+  });
+  
+
+  
+</script>
+<script>
+    const btns = document.querySelectorAll(".nav-btn");
+  const slides = document.querySelectorAll(".video-slide");
+  const contents = document.querySelectorAll(".contenttwo");
+
+var sliderNav = function(manual){
+    btns.forEach((btn) => {
+        btn.classList.remove("active");
+    })
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    
+    contents.forEach( (contenttwo ) => {
+        contenttwo.classList.remove("active");
+    });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+btns.forEach((btn , i) => {
+  btn.addEventListener("click",() =>{
+    sliderNav(i);
+  });
+})
+</script>
+
+
+
+<footer>
+    <div class="footer-section">
+        <h3>&copy; Programming: AbdulRahman AlShammari</h3>
+        <p> </p>
+        <p></p>
+        <p></p>
+        <a href="https://t.co/ovHXe1dJTz"><img class="icon" src="twitter.png" alt="Twitter"></a>
+<a href="https://t.co/M0ad1kuBm8"><img class="icon" src="linkedin.png" alt="LinkedIn"></a>
+<a href="https://github.com/Abdulrahman-A9"><img class="icon" src="github.png" alt="GitHub"></a>
+        <h3>Email: <a href="mailto:Alshammri095@gmail.com" style="color: #a5b9c5;">Alshammri095@gmail.com</a></h3>
+    </div>
+    <div class="footer-section">
+        <h3>LORM SPACE</h3>
+    </div>
+    <div class="footer-section"></div>
+        <h3>SAUDI LORM</h3>
+    </div>
+    <div class="footer-section">
+        <h3>OUR SERVICES</h3>
+        <ul>
+            <li><a href="#" style="color: white;"></a></li>
+            <li><a href="#" style="color: white;"></a></li>
+            <li><a href="#" style="color: white;"> </a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
+<!--
+  
+          "https://t.co/ovHXe1dJTz"
+          "https://t.co/M0ad1kuBm8"
+          "https://github.com/Abdulrahman-A9"
+-->
